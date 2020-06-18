@@ -66,11 +66,10 @@ class ExportViewController: UIViewController {
     func exportKeyFromRawBytesAndShowInTextView(_ rawBytes: Data) {
         let keyType = getKeyTypeFromSegmentedControl()
         let keySize = getKeyLengthFromSegmentedControl()
-        let exportImportManager = CryptoExportImportManager()
-        if let exportableDERKey = exportImportManager.exportPublicKeyToDER(rawBytes, keyType: keyType, keySize: keySize) {
+        if let exportableDERKey = CryptoExportImportManager.exportPublicKeyToDER(rawBytes, keyType: keyType, keySize: keySize) {
             self.textView.text = self.textView.text + "Exportable key in DER format:\n\(exportableDERKey.hexDescription)\n\n"
             print("Exportable key in DER format:\n\(exportableDERKey.hexDescription)\n")
-            let exportablePEMKey = exportImportManager.PEMKeyFromDERKey(exportableDERKey)
+            let exportablePEMKey = CryptoExportImportManager.PEMKeyFromDERKey(exportableDERKey)
             self.textView.text = self.textView.text + "Exportable key in PEM format:\n\(exportablePEMKey)\n\n"
             print("Exportable key in PEM format:\n\(exportablePEMKey)\n")
         } else {
@@ -114,7 +113,7 @@ class ExportViewController: UIViewController {
             let status = SecKeyGeneratePair(parameters as CFDictionary, &pubKey, &privKey)
             if status == errSecSuccess {
                 DispatchQueue.main.async(execute: {
-                    print("Successfully generated keypair!\nPrivate key: \(privKey)\nPublic key: \(pubKey)")
+                    print("Successfully generated keypair!\nPrivate key: \(String(describing: privKey))\nPublic key: \(String(describing: pubKey))")
                     let publicKeyData = self.getPublicKeyData(kExportKeyTag + self.getKeyTypeFromSegmentedControl())
                     completion?(true, publicKeyData)
                 })
