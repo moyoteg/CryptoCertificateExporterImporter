@@ -31,8 +31,10 @@ class CryptoLoadExternalCertificatesTests: XCTestCase {
         }
     }
     
-    func testStuff() {
+    func testImportDER() {
         
+        
+        let publicKeyRef = CryptoExportImportManager.importPublicKeyReferenceFromDERCertificate(Data())
     }
 
 }
