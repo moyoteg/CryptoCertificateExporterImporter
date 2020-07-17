@@ -131,10 +131,21 @@
 			path = CryptoLoadExternalCertificatesTests;
 			sourceTree = "<group>";
 		};
+		048DB00E24C1607E0069F12B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				66E9AEA91DA67A7700863AA6 /* Categories and Extensions */,
+				66B460A41BCA9853000FFCCE /* Model */,
+			);
+			name = Sources;
+			path = CryptoLoadExternalCertificate;
+			sourceTree = "<group>";
+		};
 		668B94CB1BC3D19F00913B83 = {
 			isa = PBXGroup;
 			children = (
 				044F492C249C1CE8000BA0FB /* Package.swift */,
+				048DB00E24C1607E0069F12B /* Sources */,
 				668B94D61BC3D19F00913B83 /* CryptoLoadExternalCertificate */,
 				044F4995249C236F000BA0FB /* CryptoLoadExternalCertificates */,
 				044F49A2249C236F000BA0FB /* CryptoLoadExternalCertificatesTests */,
@@ -155,8 +166,6 @@
 		668B94D61BC3D19F00913B83 /* CryptoLoadExternalCertificate */ = {
 			isa = PBXGroup;
 			children = (
-				66E9AEA91DA67A7700863AA6 /* Categories and Extensions */,
-				66B460A41BCA9853000FFCCE /* Model */,
 				66B460A31BCA9844000FFCCE /* Storyboards */,
 				66B460A21BCA9829000FFCCE /* App */,
 				66B460A11BCA97C7000FFCCE /* Resources & Assets */,
