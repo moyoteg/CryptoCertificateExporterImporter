@@ -1,4 +1,5 @@
 import Security
+import Foundation
 
 /*
 
@@ -90,7 +91,7 @@ private let kCryptoExportImportManagerPublicNumberOfCharactersInALine = 64
  * As far as I know, any other way of importing and using public keys from the outside is not
  * advised: https://devforums.apple.com/message/301532#301532
  */
-public enum CryptoExportImportManager {
+public enum CryptoKeyExporterImporter {
     // MARK: - Import methods.
     
     /**

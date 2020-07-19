@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptoCertificateExporterImporter
 
 class ImportViewController: UIViewController {
     // outlets && buttons
@@ -38,7 +39,7 @@ class ImportViewController: UIViewController {
         }
         
         // if we got the certificate data, let's extract the public key reference.
-        if let publicKeyRef = CryptoExportImportManager.importPublicKeyReferenceFromDERCertificate(certData) {
+        if let publicKeyRef = CryptoKeyExporterImporter.importPublicKeyReferenceFromDERCertificate(certData) {
             textView.text = "Successfully extracted public key from certificate:\n\(publicKeyRef)\n"
         } else {
             textView.text = "Oups! I was unable to retrieve a public key from the certificate."

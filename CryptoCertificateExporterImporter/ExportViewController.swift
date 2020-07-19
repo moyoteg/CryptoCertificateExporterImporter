@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptoCertificateExporterImporter
 
 private let kExportKeyTag = "com.CryptoLoadExternalCertificate.exampleKey"
 
@@ -66,10 +67,10 @@ class ExportViewController: UIViewController {
     func exportKeyFromRawBytesAndShowInTextView(_ rawBytes: Data) {
         let keyType = getKeyTypeFromSegmentedControl()
         let keySize = getKeyLengthFromSegmentedControl()
-        if let exportableDERKey = CryptoExportImportManager.exportPublicKeyToDER(rawBytes, keyType: keyType, keySize: keySize) {
+        if let exportableDERKey = CryptoKeyExporterImporter.exportPublicKeyToDER(rawBytes, keyType: keyType, keySize: keySize) {
             self.textView.text = self.textView.text + "Exportable key in DER format:\n\(exportableDERKey.hexDescription)\n\n"
             print("Exportable key in DER format:\n\(exportableDERKey.hexDescription)\n")
-            let exportablePEMKey = CryptoExportImportManager.PEMKeyFromDERKey(exportableDERKey)
+            let exportablePEMKey = CryptoKeyExporterImporter.PEMKeyFromDERKey(exportableDERKey)
             self.textView.text = self.textView.text + "Exportable key in PEM format:\n\(exportablePEMKey)\n\n"
             print("Exportable key in PEM format:\n\(exportablePEMKey)\n")
         } else {
