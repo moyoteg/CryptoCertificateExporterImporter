@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		044F499D249C236F000BA0FB /* CryptoLoadExternalCertificates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044F4994249C236F000BA0FB /* CryptoLoadExternalCertificates.framework */; };
-		044F49A4249C236F000BA0FB /* CryptoLoadExternalCertificatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F49A3249C236F000BA0FB /* CryptoLoadExternalCertificatesTests.swift */; };
 		044F49A6249C236F000BA0FB /* CryptoLoadExternalCertificates.h in Headers */ = {isa = PBXBuildFile; fileRef = 044F4996249C236F000BA0FB /* CryptoLoadExternalCertificates.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		044F49A9249C236F000BA0FB /* CryptoLoadExternalCertificates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044F4994249C236F000BA0FB /* CryptoLoadExternalCertificates.framework */; };
 		044F49AA249C236F000BA0FB /* CryptoLoadExternalCertificates.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 044F4994249C236F000BA0FB /* CryptoLoadExternalCertificates.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		046DAB0024C3D1E800CC1805 /* CryptoExportImportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DB00F24C161390069F12B /* CryptoExportImportManager.swift */; };
+		046DAB2624C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DAB2524C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests.swift */; };
+		046DAB2824C3D6A200CC1805 /* CryptoLoadExternalCertificates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044F4994249C236F000BA0FB /* CryptoLoadExternalCertificates.framework */; };
 		048DB01024C161390069F12B /* CryptoExportImportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DB00F24C161390069F12B /* CryptoExportImportManager.swift */; };
 		6686BBC81BC3F06D00E9D1CA /* certificate.der in Resources */ = {isa = PBXBuildFile; fileRef = 6686BBC71BC3F06D00E9D1CA /* certificate.der */; };
 		668B94D81BC3D19F00913B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668B94D71BC3D19F00913B83 /* AppDelegate.swift */; };
@@ -26,21 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		044F499E249C236F000BA0FB /* PBXContainerItemProxy */ = {
+		044F49A7249C236F000BA0FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 668B94CC1BC3D19F00913B83 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 044F4993249C236F000BA0FB;
 			remoteInfo = CryptoLoadExternalCertificates;
 		};
-		044F49A0249C236F000BA0FB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 668B94CC1BC3D19F00913B83 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 668B94D31BC3D19F00913B83;
-			remoteInfo = CryptoLoadExternalCertificate;
-		};
-		044F49A7249C236F000BA0FB /* PBXContainerItemProxy */ = {
+		046DAB2924C3D6A200CC1805 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 668B94CC1BC3D19F00913B83 /* Project object */;
 			proxyType = 1;
@@ -68,9 +61,9 @@
 		044F4994249C236F000BA0FB /* CryptoLoadExternalCertificates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoLoadExternalCertificates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		044F4996249C236F000BA0FB /* CryptoLoadExternalCertificates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoLoadExternalCertificates.h; sourceTree = "<group>"; };
 		044F4997249C236F000BA0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		044F499C249C236F000BA0FB /* CryptoLoadExternalCertificatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoLoadExternalCertificatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		044F49A3249C236F000BA0FB /* CryptoLoadExternalCertificatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLoadExternalCertificatesTests.swift; sourceTree = "<group>"; };
-		044F49A5249C236F000BA0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046DAB2324C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoLoadExternalCertificatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046DAB2524C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLoadExternalCertificatesTests.swift; sourceTree = "<group>"; };
+		046DAB2724C3D6A200CC1805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048DB00F24C161390069F12B /* CryptoExportImportManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CryptoExportImportManager.swift; path = Sources/CryptoExportImportManager.swift; sourceTree = SOURCE_ROOT; };
 		6686BBC71BC3F06D00E9D1CA /* certificate.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = certificate.der; sourceTree = "<group>"; };
 		668B94D41BC3D19F00913B83 /* CryptoLoadExternalCertificate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoLoadExternalCertificate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,11 +87,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		044F4999249C236F000BA0FB /* Frameworks */ = {
+		046DAB2024C3D6A200CC1805 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044F499D249C236F000BA0FB /* CryptoLoadExternalCertificates.framework in Frameworks */,
+				046DAB2824C3D6A200CC1805 /* CryptoLoadExternalCertificates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,11 +115,11 @@
 			path = CryptoLoadExternalCertificates;
 			sourceTree = "<group>";
 		};
-		044F49A2249C236F000BA0FB /* CryptoLoadExternalCertificatesTests */ = {
+		046DAB2424C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests */ = {
 			isa = PBXGroup;
 			children = (
-				044F49A3249C236F000BA0FB /* CryptoLoadExternalCertificatesTests.swift */,
-				044F49A5249C236F000BA0FB /* Info.plist */,
+				046DAB2524C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests.swift */,
+				046DAB2724C3D6A200CC1805 /* Info.plist */,
 			);
 			path = CryptoLoadExternalCertificatesTests;
 			sourceTree = "<group>";
@@ -148,7 +141,7 @@
 				048DB00E24C1607E0069F12B /* Sources */,
 				668B94D61BC3D19F00913B83 /* CryptoLoadExternalCertificate */,
 				044F4995249C236F000BA0FB /* CryptoLoadExternalCertificates */,
-				044F49A2249C236F000BA0FB /* CryptoLoadExternalCertificatesTests */,
+				046DAB2424C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests */,
 				668B94D51BC3D19F00913B83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,7 +151,7 @@
 			children = (
 				668B94D41BC3D19F00913B83 /* CryptoLoadExternalCertificate.app */,
 				044F4994249C236F000BA0FB /* CryptoLoadExternalCertificates.framework */,
-				044F499C249C236F000BA0FB /* CryptoLoadExternalCertificatesTests.xctest */,
+				046DAB2324C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,23 +245,22 @@
 			productReference = 044F4994249C236F000BA0FB /* CryptoLoadExternalCertificates.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		044F499B249C236F000BA0FB /* CryptoLoadExternalCertificatesTests */ = {
+		046DAB2224C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 044F49AE249C236F000BA0FB /* Build configuration list for PBXNativeTarget "CryptoLoadExternalCertificatesTests" */;
+			buildConfigurationList = 046DAB2B24C3D6A200CC1805 /* Build configuration list for PBXNativeTarget "CryptoLoadExternalCertificatesTests" */;
 			buildPhases = (
-				044F4998249C236F000BA0FB /* Sources */,
-				044F4999249C236F000BA0FB /* Frameworks */,
-				044F499A249C236F000BA0FB /* Resources */,
+				046DAB1F24C3D6A200CC1805 /* Sources */,
+				046DAB2024C3D6A200CC1805 /* Frameworks */,
+				046DAB2124C3D6A200CC1805 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				044F499F249C236F000BA0FB /* PBXTargetDependency */,
-				044F49A1249C236F000BA0FB /* PBXTargetDependency */,
+				046DAB2A24C3D6A200CC1805 /* PBXTargetDependency */,
 			);
 			name = CryptoLoadExternalCertificatesTests;
 			productName = CryptoLoadExternalCertificatesTests;
-			productReference = 044F499C249C236F000BA0FB /* CryptoLoadExternalCertificatesTests.xctest */;
+			productReference = 046DAB2324C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		668B94D31BC3D19F00913B83 /* CryptoLoadExternalCertificate */ = {
@@ -296,7 +288,7 @@
 		668B94CC1BC3D19F00913B83 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Ignacio Nieto Carvajal";
 				TargetAttributes = {
@@ -305,11 +297,10 @@
 						DevelopmentTeam = 8HL66E8Y24;
 						ProvisioningStyle = Automatic;
 					};
-					044F499B249C236F000BA0FB = {
-						CreatedOnToolsVersion = 11.5;
+					046DAB2224C3D6A200CC1805 = {
+						CreatedOnToolsVersion = 11.6;
 						DevelopmentTeam = 8HL66E8Y24;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 668B94D31BC3D19F00913B83;
 					};
 					668B94D31BC3D19F00913B83 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -338,7 +329,7 @@
 			targets = (
 				668B94D31BC3D19F00913B83 /* CryptoLoadExternalCertificate */,
 				044F4993249C236F000BA0FB /* CryptoLoadExternalCertificates */,
-				044F499B249C236F000BA0FB /* CryptoLoadExternalCertificatesTests */,
+				046DAB2224C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -351,7 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		044F499A249C236F000BA0FB /* Resources */ = {
+		046DAB2124C3D6A200CC1805 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,11 +371,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		044F4998249C236F000BA0FB /* Sources */ = {
+		046DAB1F24C3D6A200CC1805 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044F49A4249C236F000BA0FB /* CryptoLoadExternalCertificatesTests.swift in Sources */,
+				046DAB2624C3D6A200CC1805 /* CryptoLoadExternalCertificatesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,20 +395,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		044F499F249C236F000BA0FB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 044F4993249C236F000BA0FB /* CryptoLoadExternalCertificates */;
-			targetProxy = 044F499E249C236F000BA0FB /* PBXContainerItemProxy */;
-		};
-		044F49A1249C236F000BA0FB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 668B94D31BC3D19F00913B83 /* CryptoLoadExternalCertificate */;
-			targetProxy = 044F49A0249C236F000BA0FB /* PBXContainerItemProxy */;
-		};
 		044F49A8249C236F000BA0FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 044F4993249C236F000BA0FB /* CryptoLoadExternalCertificates */;
 			targetProxy = 044F49A7249C236F000BA0FB /* PBXContainerItemProxy */;
+		};
+		046DAB2A24C3D6A200CC1805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044F4993249C236F000BA0FB /* CryptoLoadExternalCertificates */;
+			targetProxy = 046DAB2924C3D6A200CC1805 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,10 +493,9 @@
 			};
 			name = Release;
 		};
-		044F49AF249C236F000BA0FB /* Debug */ = {
+		046DAB2C24C3D6A200CC1805 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -521,23 +506,21 @@
 				DEVELOPMENT_TEAM = 8HL66E8Y24;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = CryptoLoadExternalCertificatesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.CryptoLoadExternalCertificatesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moyoteg.CryptoLoadExternalCertificatesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoLoadExternalCertificate.app/CryptoLoadExternalCertificate";
 			};
 			name = Debug;
 		};
-		044F49B0249C236F000BA0FB /* Release */ = {
+		046DAB2D24C3D6A200CC1805 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -548,14 +531,13 @@
 				DEVELOPMENT_TEAM = 8HL66E8Y24;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = CryptoLoadExternalCertificatesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.CryptoLoadExternalCertificatesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moyoteg.CryptoLoadExternalCertificatesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoLoadExternalCertificate.app/CryptoLoadExternalCertificate";
 			};
 			name = Release;
 		};
@@ -705,11 +687,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		044F49AE249C236F000BA0FB /* Build configuration list for PBXNativeTarget "CryptoLoadExternalCertificatesTests" */ = {
+		046DAB2B24C3D6A200CC1805 /* Build configuration list for PBXNativeTarget "CryptoLoadExternalCertificatesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				044F49AF249C236F000BA0FB /* Debug */,
-				044F49B0249C236F000BA0FB /* Release */,
+				046DAB2C24C3D6A200CC1805 /* Debug */,
+				046DAB2D24C3D6A200CC1805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
