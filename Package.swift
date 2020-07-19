@@ -23,6 +23,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "CryptoKeyExporterAndImporterTests",
-            dependencies: ["CryptoKeyExporterAndImporterManager"]),
+            dependencies: ["CryptoKeyExporterAndImporter"]),
     ]
 )
