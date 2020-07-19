@@ -67,10 +67,10 @@ class ExportViewController: UIViewController {
     func exportKeyFromRawBytesAndShowInTextView(_ rawBytes: Data) {
         let keyType = getKeyTypeFromSegmentedControl()
         let keySize = getKeyLengthFromSegmentedControl()
-        if let exportableDERKey = CryptoKeyExporterImporter.exportPublicKeyToDER(rawBytes, keyType: keyType, keySize: keySize) {
+        if let exportableDERKey = CryptoCertificateExporterImporter.exportPublicKeyToDER(rawBytes, keyType: keyType, keySize: keySize) {
             self.textView.text = self.textView.text + "Exportable key in DER format:\n\(exportableDERKey.hexDescription)\n\n"
             print("Exportable key in DER format:\n\(exportableDERKey.hexDescription)\n")
-            let exportablePEMKey = CryptoKeyExporterImporter.PEMKeyFromDERKey(exportableDERKey)
+            let exportablePEMKey = CryptoCertificateExporterImporter.PEMKeyFromDERKey(exportableDERKey)
             self.textView.text = self.textView.text + "Exportable key in PEM format:\n\(exportablePEMKey)\n\n"
             print("Exportable key in PEM format:\n\(exportablePEMKey)\n")
         } else {
